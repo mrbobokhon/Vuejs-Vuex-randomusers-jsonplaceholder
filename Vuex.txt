@@ -1,0 +1,25 @@
+                                                        Counter
+<h1>{{  $store.state.counter }}</h1>
+<button class="btn " @click="$store.commit('increaseCounter'">+</button>
+ <button class="btn"  @click="$store.commit('dicreaseCounter')">-</button>
+
+index.js
+state:{
+    counter:0
+},
+ mutations: {
+    increaseCounter(state){
+      return state.counter++
+    },
+        dicreaseCounter(state){
+      return state.counter--
+    }
+  },
+  //////////////////////////////////////////////////////////////////////////////////
+
+  !!!!!!!Mutations wait two parametrs first of which must be state and second parametr that you send
+      mutations: {
+        addUsers(state, ne){
+            console.log(ne)
+        },
+
